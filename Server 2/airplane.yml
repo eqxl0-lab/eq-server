@@ -1,0 +1,15 @@
+# Airplane Configuration
+# Read https://blog.airplane.gg/ to find out more about Airplane
+# Join our Discord to receive support & optimization help: https://discord.gg/3gtc45q
+info:
+  version: '1.0'
+# Options for connecting to Airplane's online utilities
+web-services:
+  token: ''
+# Configures Flare, the built-in profiler
+flare:
+  url: https://flare.airplane.gg
+# Optimizes projectile settings
+projectile:
+  max-loads-per-tick: 10
+  max-loads-per-projectile: 10

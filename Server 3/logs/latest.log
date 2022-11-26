@@ -1,0 +1,75 @@
+[23:27:01] [ServerMain/INFO]: [MultiPaperConnection] Connecting to localhost:35353...
+[23:27:02] [MultiPaper-Netty-1/INFO]: [MultiPaperConnection] Connected to localhost/127.0.0.1:35353
+[23:27:02] [MultiPaper-Netty-1/WARN]: [io.netty.channel.DefaultChannelPipeline] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.IllegalArgumentException: Unknown data stream with streamId=2
+	at puregero.multipaper.mastermessagingprotocol.datastream.DataStreamManager.handleInboundData(DataStreamManager.java:37) ~[MultiPaper-MasterMessagingProtocol-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at puregero.multipaper.mastermessagingprotocol.messages.serverbound.ServerBoundDataStreamMessage.handle(ServerBoundDataStreamMessage.java:35) ~[MultiPaper-MasterMessagingProtocol-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at puregero.multipaper.mastermessagingprotocol.messages.serverbound.ServerBoundDataStreamMessage.handle(ServerBoundDataStreamMessage.java:5) ~[MultiPaper-MasterMessagingProtocol-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at puregero.multipaper.mastermessagingprotocol.messages.MessageHandler.channelRead0(MessageHandler.java:51) ~[MultiPaper-MasterMessagingProtocol-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at puregero.multipaper.mastermessagingprotocol.messages.MessageHandler.channelRead0(MessageHandler.java:12) ~[MultiPaper-MasterMessagingProtocol-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327) ~[netty-codec-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299) ~[netty-codec-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327) ~[netty-codec-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:299) ~[netty-codec-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.77.Final.jar:4.1.77.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[23:27:02] [MultiPaper-Netty-1/INFO]: [MultiPaperFileSyncer] Downloaded config\paper-global.yml (0KB)
+[23:27:11] [ServerMain/INFO]: Building unoptimized datafixer
+[23:27:17] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[23:27:30] [ServerMain/INFO]: Loaded 7 recipes
+[23:27:38] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[23:27:38] [Server thread/INFO]: Loading properties
+[23:27:38] [Server thread/INFO]: This server is running MultiPaper version MultiPaper-1.19.2-37 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 04f646c)
+[23:27:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:27:38] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:27:39] [Server thread/INFO]: Default game type: SURVIVAL
+[23:27:39] [Server thread/INFO]: Generating keypair
+[23:27:40] [Server thread/INFO]: Starting Minecraft server on *:25568
+[23:27:40] [Server thread/INFO]: Using default channel type
+[23:27:40] [Server thread/INFO]: Paper: Using Java 11 compression from Velocity.
+[23:27:40] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[23:27:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:27:40] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[23:27:40] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[23:27:40] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[23:27:40] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[23:27:40] [Server thread/INFO]: Preparing level "world"
+[23:27:42] [MultiPaper-Netty-3/INFO]: [HelloPacket] Connected to external server server-01
+[23:27:42] [MultiPaper-Netty-2/INFO]: [HelloPacket] Connected to external server server-02
+[23:28:15] [Server thread/INFO]: Running delayed init tasks
+[23:28:15] [Server thread/INFO]: Done (37.346s)! For help, type "help"
+[23:28:15] [Server thread/INFO]: Timings Reset
+[23:29:54] [Server thread/INFO]: Stopping server
+[23:29:54] [Server thread/INFO]: Saving players
+[23:29:55] [Server thread/INFO]: Saving worlds
+[23:29:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:29:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[23:29:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[23:29:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:29:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:29:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:29:55] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23:29:55] [Server thread/INFO]: Flushing Chunk IO
+[23:29:55] [Server thread/INFO]: Closing MultiPaper File Syncer
+[23:29:55] [Server thread/INFO]: Closing Thread Pool
+[23:29:55] [Server thread/INFO]: Closing Server
